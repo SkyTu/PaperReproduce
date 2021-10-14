@@ -4,4 +4,4 @@ PROJECT(SecureML)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(test1 test.cpp Utils.cpp Utils.hpp)
+add_executable(test1 test.cpp Utils.cpp Utils.hpp AdditiveShare.cpp AdditiveShare.hpp)

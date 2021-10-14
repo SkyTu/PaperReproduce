@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-10-13 15:30:28
- * @LastEditTime: 2021-10-14 11:26:29
+ * @LastEditTime: 2021-10-14 13:54:51
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /txy/cpplearn/Utils.hpp
@@ -10,7 +10,7 @@
 #include<Eigen/Dense>
 #include<iostream>
 
-typedef Eigen::Matrix<__uint64_t, Eigen::Dynamic, Eigen::Dynamic> MatrixDI;//dynamic matrix with integer elements(128 bits) 
+typedef Eigen::Matrix<__uint64_t, Eigen::Dynamic, Eigen::Dynamic> MatrixDI;//dynamic matrix with integer elements(64 bits) 
 typedef Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic> MatrixDD;//dynamic matrix with double elements 
 
 class Utils{
@@ -27,14 +27,14 @@ class Utils{
         int rows;
         int bits = 32;
     public:
-        vector<MatrixDI>share;
+        std::vector<MatrixDI>share;
         int participants = 2;//Default 2PC
-        void ptx_additive_secret_share(int participantes);
+        void ptx_additive_secret_share();
         MatrixDI recover(const MatrixDI &Mat_a, const MatrixDI &Mat_b);
 
         //getter & setter
         void get_plaintext();
         void set_plaintext(const MatrixDD &inp);
         void set_participants(int participants);
-        void get_triplets();
+        // void get_triplets();
 };

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test1.dir/AdditiveShare.cpp.o"
   "CMakeFiles/test1.dir/Utils.cpp.o"
   "CMakeFiles/test1.dir/test.cpp.o"
   "test1"

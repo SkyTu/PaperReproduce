@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/test1.dir/test.cpp.o CMakeFiles/test1.dir/Utils.cpp.o -o test1 
+/usr/bin/c++ CMakeFiles/test1.dir/test.cpp.o CMakeFiles/test1.dir/Utils.cpp.o CMakeFiles/test1.dir/AdditiveShare.cpp.o -o test1 
