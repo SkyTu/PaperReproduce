@@ -1,0 +1,3 @@
+/home/txy/cpplearn/CMakeFiles/rebuild_cache.dir
+/home/txy/cpplearn/CMakeFiles/edit_cache.dir
+/home/txy/cpplearn/CMakeFiles/test1.dir

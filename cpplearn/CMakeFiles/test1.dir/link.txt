@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test1.dir/test.cpp.o CMakeFiles/test1.dir/Utils.cpp.o -o test1 

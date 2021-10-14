@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/txy/cpplearn/Utils.cpp
+vector
+-
+Eigen/Dense
+-
+iostream
+-
+cmath
+-
+Utils.hpp
+/home/txy/cpplearn/Utils.hpp
+
+/home/txy/cpplearn/Utils.hpp
+vector
+-
+Eigen/Dense
+-
+iostream
+-
+
