@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/home/txy/PaperReproduce/cpplearn/AdditiveShare.cpp
+AdditiveShare.hpp
+/home/txy/PaperReproduce/cpplearn/AdditiveShare.hpp
+
 /home/txy/PaperReproduce/cpplearn/AdditiveShare.hpp
 vector
 -
 Eigen/Dense
 -
+
+/home/txy/PaperReproduce/cpplearn/Utils.cpp
+Utils.hpp
+/home/txy/PaperReproduce/cpplearn/Utils.hpp
 
 /home/txy/PaperReproduce/cpplearn/Utils.hpp
 vector
