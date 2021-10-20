@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/txy/PaperReproduce/OTextension/PrimeGroup.cpp
+PrimeGroup.hpp
+/home/txy/PaperReproduce/OTextension/PrimeGroup.hpp
+
+/home/txy/PaperReproduce/OTextension/PrimeGroup.hpp
+stdlib.h
+-
+vector
+-
+iostream
+-
+

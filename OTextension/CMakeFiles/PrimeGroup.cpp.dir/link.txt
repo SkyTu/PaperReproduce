@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/PrimeGroup.cpp.dir/test.cpp.o -o PrimeGroup.cpp 
