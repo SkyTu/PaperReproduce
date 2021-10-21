@@ -1,0 +1,3 @@
+/home/txy/PaperReproduce/OTextension/Client/CMakeFiles/rebuild_cache.dir
+/home/txy/PaperReproduce/OTextension/Client/CMakeFiles/edit_cache.dir
+/home/txy/PaperReproduce/OTextension/Client/CMakeFiles/reciever.dir

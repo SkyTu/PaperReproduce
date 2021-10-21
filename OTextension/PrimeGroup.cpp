@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-10-20 09:59:52
- * @LastEditTime: 2021-10-20 10:54:17
+ * @LastEditTime: 2021-10-21 14:06:09
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /txy/PaperReproduce/OTextension/PrimeGroup.cpp
@@ -41,5 +41,6 @@ void PrimeGroup::initC(){
     //获得Zq域中的任意元素
     srand(time(0));
     c = cyc_group[rand()%cyc_group.size()];
+    return;
 }
 

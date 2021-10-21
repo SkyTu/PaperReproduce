@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/txy/PaperReproduce/OTextension/Client/reciever.cpp
+sys/types.h
+-
+sys/socket.h
+-
+string.h
+-
+stdio.h
+-
+netinet/in.h
+-
+stdlib.h
+-
+arpa/inet.h
+-
+iostream
+-
+errno.h
+-
+sys/wait.h
+-
+unistd.h
+-
+../PrimeGroup.hpp
+/home/txy/PaperReproduce/OTextension/PrimeGroup.hpp
+
+/home/txy/PaperReproduce/OTextension/PrimeGroup.hpp
+stdlib.h
+-
+vector
+-
+iostream
+-
+

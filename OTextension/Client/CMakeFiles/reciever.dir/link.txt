@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/reciever.dir/home/txy/PaperReproduce/OTextension/PrimeGroup.cpp.o CMakeFiles/reciever.dir/reciever.cpp.o -o reciever 
