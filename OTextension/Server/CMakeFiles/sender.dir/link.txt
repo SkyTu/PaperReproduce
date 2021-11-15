@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/sender.dir/home/txy/PaperReproduce/OTextension/PrimeGroup.cpp.o CMakeFiles/sender.dir/sender.cpp.o -o sender 
+/usr/bin/c++ CMakeFiles/sender.dir/home/txy/PaperReproduce/OTextension/PrimeGroup.cpp.o CMakeFiles/sender.dir/sender.cpp.o -o sender  -Wl,-rpath,/usr/local/lib /usr/local/lib/libcryptopp.a /usr/local/lib/libcryptopp.so /usr/local/lib/libcryptopp.so.8 /usr/local/lib/libcryptopp.so.8.7.0 

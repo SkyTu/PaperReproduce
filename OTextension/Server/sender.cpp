@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-10-20 12:49:11
- * @LastEditTime: 2021-10-30 19:28:50
+ * @LastEditTime: 2021-11-10 10:17:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /txy/PaperReproduce/OTextension/reciever.cpp
@@ -19,6 +19,11 @@
 #include <string>
 #include <vector>
 #include "../PrimeGroup.hpp"
+#include "cryptopp/shake.h"
+#include "cryptopp/cryptlib.h"
+#include "cryptopp/filters.h"
+#include "cryptopp/files.h"
+#include "cryptopp/hex.h"
 #define addr "10.176.34.170" 
 #define MAXLINK 1024
 #define BUFFSIZE 1024
@@ -76,41 +81,60 @@ int main()
         }
 
         //变量声明
-        std::string m0, m1;
         PrimeGroup p;
         int64 c;
         //生成随机数C
         p.initC();
+        int64 gr0 = 0;
+        int64 gr1 = 0;
+        std::string hashval0;
+        std::string hashval1;
         std::vector<int64> PK;
-
-        //开始传输数据
-        printf("Oblivious Transfer Begins! Please input the message you want to transport\n");
-        std::cin>>m0;
-        std::cin>>m1;
-        
-        
+            
         srand(time(0));
         int k = rand()%p.cyc_group.size()+1;//生成随机数1<=k<=q(q为循环群的阶)
         PK.push_back(p.cyc_group[k+1]);//获得PK[0]，即为g的k次方
         PK.push_back(p.divide(p.c,PK[0]));//获得PK[1]
         c = p.c;
-        bzero(buff, BUFFSIZE);
+        bzero(buff, sizeof(buff));
         strcpy(buff, std::to_string(c).c_str());
         send(connfd, buff, strlen(buff), 0);
         printf("Send: c = %s\n", buff);
 
-        bzero(buff, BUFFSIZE);
+        bzero(buff, sizeof(buff));
         strcpy(buff, std::to_string(PK[0]).c_str());
         send(connfd, buff, strlen(buff), 0);
         printf("Send: PK[0] = %s\n", buff);
         
-        bzero(buff, BUFFSIZE);
-        // 对应伪代码中的recv(connfd, buff);
+        bzero(buff, sizeof(buff));
         recv(connfd, buff, BUFFSIZE - 1, 0);
         printf("Recv: %s\n", buff);
-    	    
+    	gr0 = atol(buff);
+
+        bzero(buff, sizeof(buff));
+        recv(connfd, buff, BUFFSIZE - 1, 0);
+        printf("Recv: %s\n", buff);
+        gr1 = atol(buff);
+                       
+        bzero(buff, sizeof(buff));
+        recv(connfd, buff, BUFFSIZE - 1, 0);
+        printf("Recv: %s\n", buff);
+        hashval0 = buff;
+        
+        bzero(buff, sizeof(buff));
+        recv(connfd, buff, BUFFSIZE - 1, 0);
+        printf("Recv: %s\n", buff);
+        hashval1 = buff;
+
+        
     }
     close(connfd);
     // END
     return 0;
-}
+}          
+
+/*
+TODO List
+1. 代码太冗余
+2. 传输数据的hex encoding而后进行xor
+*/

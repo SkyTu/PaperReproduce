@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/test.dir/PrimeGroup.cpp.o CMakeFiles/test.dir/test.cpp.o -o test 
+/usr/bin/c++ CMakeFiles/test.dir/PrimeGroup.cpp.o CMakeFiles/test.dir/test.cpp.o -o test  -Wl,-rpath,/usr/local/lib /usr/local/lib/libcryptopp.a /usr/local/lib/libcryptopp.so /usr/local/lib/libcryptopp.so.8 /usr/local/lib/libcryptopp.so.8.7.0 

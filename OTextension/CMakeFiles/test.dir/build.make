@@ -113,6 +113,10 @@ test_EXTERNAL_OBJECTS =
 test: CMakeFiles/test.dir/PrimeGroup.cpp.o
 test: CMakeFiles/test.dir/test.cpp.o
 test: CMakeFiles/test.dir/build.make
+test: /usr/local/lib/libcryptopp.a
+test: /usr/local/lib/libcryptopp.so
+test: /usr/local/lib/libcryptopp.so.8
+test: /usr/local/lib/libcryptopp.so.8.7.0
 test: CMakeFiles/test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/txy/PaperReproduce/OTextension/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
